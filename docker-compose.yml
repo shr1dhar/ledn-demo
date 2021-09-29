@@ -17,4 +17,3 @@ services:
       - 27017:27017
     volumes:
       - ./data:/data
-#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
