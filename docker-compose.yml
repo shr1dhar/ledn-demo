@@ -1,0 +1,20 @@
+version: '3.0'
+
+services:
+  api:
+    container_name: API-LEDN
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3001:3001
+    depends_on:
+      - mongodb_container
+
+  mongodb_container:
+    image: mongo:4.4
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data:/data
+#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
