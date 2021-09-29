@@ -1,0 +1,16 @@
+{
+  "entryFile": "api/server.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["api/**/*Controller.ts"],
+  "spec": {
+    "outputDirectory": "build",
+    "specVersion": 3
+  },
+  "swagger": {
+    "outputDirectory": ".",
+    "entryFile": "./api/server.ts"
+  },
+  "routes": {
+    "routesDir": "build"
+  }
+}
